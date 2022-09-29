@@ -19,11 +19,11 @@ class ut01ex02Activity : AppCompatActivity() {
 
         isFirstOpened = true
 
-        var X =1
-        if (X==1) {
 
+        if (sharedPref.getBoolean("FirstTime")==true) {
+            "nothing"
         } else {
-
+            sharedPreference.setBoolean("FirstTime")
         }
 
 

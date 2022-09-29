@@ -25,7 +25,6 @@ class PreferenceLocalSource (val activity: Activity) {
         fun getApp(): App {
             return App(
                 sharedPref.getBoolean("FirstTime", true)
-
             )
             val editor = sharedPref.edit()
         }
