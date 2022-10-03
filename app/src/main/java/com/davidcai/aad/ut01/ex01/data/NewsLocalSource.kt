@@ -4,7 +4,7 @@ import android.app.Activity
 import android.content.Context
 import com.davidcai.aad.ut01.ex01.domain.Customer
 
-class PreferenceLocalSource (val activity: Activity) {
+class NewsLocalSource (val activity: Activity) {
     val sharedPref = activity.getPreferences(
         Context.MODE_PRIVATE
     )
