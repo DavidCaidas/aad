@@ -10,8 +10,6 @@ class PreferenceLocalSource (val activity: Activity) {
         Context.MODE_PRIVATE
     )
 
-
-
     fun saveApp(app: App) {
         val editor = sharedPref.edit()
 
@@ -26,7 +24,6 @@ class PreferenceLocalSource (val activity: Activity) {
             return App(
                 sharedPref.getBoolean("FirstTime", true)
             )
-            val editor = sharedPref.edit()
         }
 
 
