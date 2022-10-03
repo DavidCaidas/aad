@@ -20,7 +20,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity_ut01ex02"
+            android:name=".activity_ut01ex03"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -56,7 +56,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ut01.ex02.presentation.Ut01Ex02Activity"
+            android:name=".ut01.ex02.presentation.Ut01Ex03Activity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
