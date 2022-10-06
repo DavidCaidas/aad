@@ -1,5 +1,6 @@
 package com.davidcai.aad.ut01.ex05.presentation
 
+import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
@@ -17,14 +18,15 @@ class Ut01Ex05Activity : AppCompatActivity() {
         init()
     }
 
-    private fun init(){
-        //Obtain all users from data layer
+    private fun init() {
+        // TODO Obtain all users from data layer
         val userRepository = UserRepository(
-            UsersLocalDataSource(),
+            UsersLocalDataSource(getPreferences(Context.MODE_PRIVATE)),
             UsersRemoteDataSource()
         )
 
-        val users = userRepository.getUsers()
-        Log.d("@dev", "Users: $users")
+        userRepository.getUsers()
+        Log.d("@dev", "Acabó userRepository.getUsers")
+
     }
 }
