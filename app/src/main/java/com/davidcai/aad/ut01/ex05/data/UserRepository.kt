@@ -1,9 +1,14 @@
 package com.davidcai.aad.ut01.ex05.data
 
+import android.app.Activity
+import android.content.Context
 import android.util.Log
+import com.davidcai.aad.ut01.ex01.domain.Customer
 import com.davidcai.aad.ut01.ex05.data.local.UsersLocalDataSource
 import com.davidcai.aad.ut01.ex05.data.remote.UsersRemoteDataSource
 import com.davidcai.aad.ut01.ex05.domain.User
+import com.google.gson.Gson
+import java.nio.file.Files.find
 
 class UserRepository(
     val localSource: UsersLocalDataSource,
@@ -19,19 +24,35 @@ class UserRepository(
         if (users == null) {
             users = remoteSource.getUsers()
             localSource.saveUsers(users as MutableList<User>)
-            Log.d("@dev", "Guardó en local")
         }
-        Log.d("@dev", "Devolvió usuarios")
+
         return users
     }
-/*
-    fun getUserById (userId: Int) : User {
-        // TODO: verify in local, else do in remote
+
+
+    fun getUserById(userId: Int): User {
+        var user = localSource.findById(userId)
+        if (user == null) {
+            user = remoteSource.getUser(userId)
+        }
+        return user
     }
+
+
+
+
+//------------------------------------------------
+
+
+    /*
+
 
     fun removeUser(userId: Int){
-        // TODO (local
-    }
+        // TODO (local              }
 
- */
+
+    */
+
+    //----------------------------------------------
+
 }
