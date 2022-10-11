@@ -48,8 +48,15 @@ class UsersLocalDataSource(val sharedPref: SharedPreferences) {
 
 
     fun getUsers(): List<User> {
-        return emptyList()
+       val usersList = mutableListOf<User>()
+        sharedPref.all.forEach{ entry ->
+        val user = gson.fromJson(entry.value as String, User::class.java)
+            usersList.add(user)
+
+        }
+        return usersList
     }
+
 /*
     fun getUser():User = User(){
 
