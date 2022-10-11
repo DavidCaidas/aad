@@ -52,7 +52,6 @@ class UsersLocalDataSource(val sharedPref: SharedPreferences) {
         sharedPref.all.forEach{ entry ->
         val user = gson.fromJson(entry.value as String, User::class.java)
             usersList.add(user)
-
         }
         return usersList
     }

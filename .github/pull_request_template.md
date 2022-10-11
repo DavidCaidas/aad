@@ -1,22 +1,22 @@
 ## Description de la tarea
 
-<!-- Descripción sobre lo que se pide en la tarea -->
+implementado el documento de molde de github
 
 ## ¿Cómo se ha implementado?
 
-<!-- Estructura de clases, patrones: MVVM, etc.  -->
+creada carpeta en el directorio principal y copiado el documento base de git
 
 ## Keywords
 
-<!-- Palabras relacionadas con los conceptos vistos -->
+github, pull request, template
 
 ## Screenshots or Video
 
-<!-- Captura de pantalla de la consola -->
+
 
 ## Objetivos
 
-<!-- Buscar en el README el Resultado de Aprendizaje con el que se está trabajando -->
+aprendido a utilizar
 
 ## Criterios de Evaluación
 <!-- 
