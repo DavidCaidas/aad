@@ -56,8 +56,8 @@ fun saveCustomer(customer: Customer){
 /*
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
-import com.rafaelmardom.aad.R
-import com.rafaelmardom.aad.ut01.domain.Customer
+import com.davidcai.aad.R
+import com.davidcai.aad.ut01.domain.Customer
 
 // Fichero que maneja datos locales.
 // Fichero XML que permite guardar datos del tipo clave / valor

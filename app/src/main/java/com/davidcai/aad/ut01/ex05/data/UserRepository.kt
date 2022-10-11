@@ -40,19 +40,15 @@ class UserRepository(
 
 
 
+    fun removeUser(userId: Int) {
+        localSource.remove(userId)
+    }
 
-//------------------------------------------------
 
 
     /*
 
-
-    fun removeUser(userId: Int){
-        // TODO (local              }
-
-
+fun removeUser(userId: Int){
+           }
     */
-
-    //----------------------------------------------
-
 }
