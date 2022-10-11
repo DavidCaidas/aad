@@ -73,8 +73,7 @@ class UsersLocalDataSource(val sharedPref: SharedPreferences) {
 
 
     fun remove(userId: Int) {
-        sharedPref.edit().remove(userId.toString())
-        sharedPref.apply {}
+        sharedPref.edit().remove(userId.toString()).commit()
     }
 
 
