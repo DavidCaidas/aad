@@ -1,4 +1,4 @@
-package com.davidcai.aad.ut01.ex05.data
+package com.davidcai.aad.ut01.ex06.data
 
 import android.app.Activity
 import android.content.Context
